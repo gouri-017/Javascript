@@ -10,6 +10,7 @@ function dowhenclick (){
    var buttonInnerHtml = this.innerHTML;
    // console.log(buttonInnerHtml)
    makesound(buttonInnerHtml);
+   buttonAnimation(buttonInnerHtml);
    
 }
 
@@ -24,6 +25,7 @@ for (let i = 0; i < numberofbuutons.length; i++) {
 document.addEventListener("keypress", function(event){
    // alert("key pressed")
    makesound(event.key);
+   buttonAnimation(event.key);
 });
 function makesound(key){
 
@@ -63,3 +65,12 @@ switch(key){
    }
 }
 
+function buttonAnimation(currentkey){
+   var activebutton  = document.querySelector("."+currentkey)
+
+   activebutton.classList.add("pressed")
+   setTimeout(function(){
+      activebutton.classList.remove("pressed")
+
+   },100)
+}
