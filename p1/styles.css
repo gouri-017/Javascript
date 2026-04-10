@@ -1,0 +1,27 @@
+*
+body{
+  background-color: aliceblue;
+  margin: 20px;
+  padding: 30px;
+}
+
+ .inner-box {
+  height: 100px;
+  width: 100px;
+  border: 4px solid black;
+  background-color: rgb(165, 185, 185);
+  border-radius: 50%;
+ }
+
+ #blue {
+background-color: lightblue;
+ }
+ #pink {
+background-color: lightpink;
+ }
+ #orange{
+background-color: lightsalmon;
+ }
+ #green {
+background-color: lightseagreen;
+ }
